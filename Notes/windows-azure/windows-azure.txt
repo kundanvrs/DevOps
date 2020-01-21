@@ -1,0 +1,1 @@
+1.scale up and scale down done by azure load balancer

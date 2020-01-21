@@ -1,0 +1,45 @@
+grep [options] pattern [files] ==>The grep filter searches a file for a particular pattern of
+==================================characters, and displays all lines that contain that pattern. 
+-----------------------------------------------------------------------------
+
+[Options] Description
+----------------------
+-c : This prints only a count of the lines that match a pattern
+-h : Display the matched lines, but do not display the filenames.
+-i : Ignores, case for matching
+-l : Displays list of a filenames only.
+-n : Display the matched lines and their line numbers.
+-v : This prints out all the lines that do not matches the pattern
+-e exp : Specifies expression with this option. Can use multiple times.
+-f file : Takes patterns from file, one per line.
+-E : Treats pattern as an extended regular expression (ERE)
+-w : Match whole word
+-o : Print only the matched parts of a matching line,
+ with each such part on a separate output line.
+
+==============================================================================
+REGULAR EXPRESSION
+--------------------
+[ ]: Matches any one of a set characters
+[ ] with hyphen: Matches any one of a range characters
+^: The pattern following it must occur at the beginning of each line
+^ with [ ] : The pattern must not contain any character in the set specified
+$: The pattern preceding it must occur at the end of each line
+. (dot): Matches any one character
+\ (backslash): Ignores the special meaning of the character following it
+*: zero or more occurrences of the previous character
+(dot).*: Nothing or any numbers of characters.
+
+>>grep  “New[abc]”  filename
+>>ls –l |grep  “^d” 
+>>
+>>
+============================================================
+
+>grep -i "UNix" <filename>
+>grep -l "unix" * 
+>grep -l "unix" f1.txt f2.txt f3.xt f4.txt
+>
+>
+>$grep –f pattern.txt  geekfile.txt
+

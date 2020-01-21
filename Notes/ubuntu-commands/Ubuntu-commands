@@ -1,0 +1,29 @@
+Install Software in Ubuntu
+---------------------------
+1) .sh file
+>open terminal
+>bash path/filename.sh
+
+2).deb file
+>automatically install on click (open with software centre)
+
+3) .gz file
+extract folder
+find sh file path (in bin folder)
+do same like .sh
+
+4)from repository
+>sudo add-apt-repository ppa:haraldhv/shotcut
+>sudo apt-get update
+>sudo apt-get install shotcut
+
+5) .run file
+open terminal in folder where software
+chmod 755 xampp-linux-x64-7.3.8-2-installer.run[package name]
+sudo ./xampp-linux-x64-7.3.8-2-installer.run[package name]
+===========================
+Upgrade
+>sudo apt upgrade <app-name>
+
+
+

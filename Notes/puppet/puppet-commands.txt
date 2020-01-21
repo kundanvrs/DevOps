@@ -1,0 +1,37 @@
+To restart the service:
+
+C:\>sc stop puppet
+C:\>sc start puppet
+
+-----------------------
+re-enable the agent:
+
+Disable – puppet agent --disable "<MESSAGE>"
+Enable – puppet agent --enable
+
+-------------------------
+
+browse and manage resources interactively
+
+puppet resource subcommand; 
+run puppet resource --help for more information.
+
+-------------------------------
+pdk build command
+
+pdk build [--target-dir=<PATH>] [--force]
+
+--------------------------------
+pdk convert command
+
+pdk convert [--noop] [--force][--template-url=<GIT_URL>] [--skip-interview] [--full-interview]
+
+--------------------------------
+pdk new class command
+
+pdk new class [--template-url=<GIT_URL>] <class_name>
+
+---------------------------------
+pdk new defined_type command
+
+pdk new defined_type [--template-url=<GIT_URL>] <defined_type_name>

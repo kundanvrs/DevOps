@@ -1,0 +1,234 @@
+BASIC
+------
+0)git init
+0)git help <cmd>
+0)git <cmd> --help
+0)history
+---------------------
+1)git status
+2)git add .
+3)git commit -m "commit msg"
+4)git push
+
+for internal modules
+--------------------
+1)use =>git submodule foreach instead of git
+
+===============================================================================
+SETTINGS
+---------
+1)git config
+2)git config --global user.name "My Name"
+3)git config --global user.email "user@domain.com"
+
+
+REMOTE USE
+----------
+1)git pull origin <branch name>
+2)git fetch origin <branch name>
+3)git push origin master
+4)git clone <github-url>
+5)git remote origin
+6)
+
+===============================================================================
+SHORTCUT
+---------
+1)git commit -a -m ‘committing all changes, equals to git add and git commit’
+2)git checkout -b <branch-name>
+
+===============================================================================
+MEDIUM
+-------
+1)
+2)git merge <branch-name>
+3)git log commit
+4)git checkout <branch-name>
+5)git branch -b <branch-name> 
+6)git diff
+7)git diff --staged | >git diff --catched
+
+8)git commit --amend                  # start $EDITOR to edit the message
+9)git commit --amend -m "New message" 	# set the new message directly
+
+===============================================================================
+ADVANCE
+--------
+1)git stash
+------------
+>git stash -a      #stashed all files
+>git stash -u 	   # stashed untractecd files
+>git stash         # stashed tracked files
+
+>git stash save "stash msg"
+>git stash list
+>git stash apply <stash{0}>
+>git status pop
+>git stash clear
+
+2)git revert commit
+-------------------
+>git revert <commit-id>
+
+
+
+3)git tag
+----------
+>git tag -l "regularExp"
+>git tag -a v1.0 -m 'this is version 1.0 tag'
+>git show
+>git tag <tagname> -lw
+>git show <tagname> -lw
+
+>git push origin <tagname>
+>git push origin --tags
+
+>git tag -d <tagname> -lw  #delete tag
+>git push origin --delete <tagname>
+
+>git checkout <tagname>
+>git checkout -b 
+
+4)git branch
+-------------
+>git branch
+>git checkout <branch-name>
+>git branch -d <branc-name>
+>git branch --no-merged
+>git branch --merged
+>
+>
+
+5)git push
+------------
+>git push <remote> <branch-name>
+>git push origin <branch-name>
+
+>git push origin --delete <branch-name>
+>git push -u origin <branch-name>
+
+6)git rebase
+--------------
+
+
+
+7)git remote
+--------------
+>git remote add <name> <remote-location|SSH|URL>
+>
+
+--------------
+8)git rm --cached <filename>   #UNSTAGED a file
+
+9)git clean -fd  #remove UNSTAGED file
+
+10)git reset --hard HEAD  #remove STAGED file
+
+11)git cherry-pick <commit-id>
+>If you cherry-pick from a public branch, you should consider using
+>git cherry-pick -x <commit-hash>
+
+
+======================================================================
+ENTERPRISE WORK
+-----------------
+Basic
+______
+
+1)git rm --cached <filename>   #UNSTAGED a file
+
+2)git clean -fd  #remove UNSTAGED file
+
+3)git reset --hard HEAD  #remove STAGED file
+
+
+Use the below commands to clean status:
+----------------------------------------
+>git clean –fd
+>git submodule foreach git clean –fd
+>git reset –hard HEAD
+>git submodule foreach git reset –hard HEAD
+
+Fetch and pull latest changes:
+---------------------------------
+>git fetch origin
+>git submodule foreach git fetch origin
+>git pull origin <branc-name>
+>git submodule foreach git pull origin <branc-name>
+
+Use below commands to merge remotely:
+----------------------------------------------
+>git merge origin/feature/XER-XXX
+>git submodule foreach git merge origin/feature/XER-XXX@MetraNet_CD
+
+Local merge and push to remote:
+------------------------------------------------------
+>git fetch pull <side branch> --submodule also
+>checkout to main branch
+>fetch pull main branch ---submodule also
+>git merge <side-branch>   --submodule also
+>git push origin <main-branch>   --submodule also
+
+
+
+Push your changes to GIT repository:
+-------------------------------------
+>git submodule foreach git push –u origin feature/XER-XXX@MetraNet_CD 
+>git push –u origin feature/XER-XXX
+
+Git branch creation
+----------------------------
+>git checkout -b feature/XER-XXX
+>git submodule foreach git checkout -b feature/XER-XXX@MetraNet_CD
+
+
+To Push a file on remote
+_________________________
+
+1)git status
+2)git add <.|file-name>
+3)git commit -m "commit message"
+4)git push origin <branc-name>
+
+To push a file and submodules on remote
+---------------------------------------
+$ cd path/to/submodule
+$ git add <stuff>
+$ git commit -m "comment"
+$ git push origin <branc-name>
+Then, update your main module to track the updated version of the submodule:
+
+$ cd /main/project
+$ git add path/to/submodule
+$ git commit -m "updated my submodule"
+$ git push origin <branc-name>
+
+For submodules
+_________________
+>use git submodule foreach
+
+
+Merge Process
+-----------------------
+*master
+git checkout -b <branch-name>
+git fetch origin
+git pull origin master
+git add .
+git commit -m "msg"
+
+git push origin <branch-name>
+git checkout master
+git merge origin <branch-name>
+git push origin master
+--------------------------------
+Push process
+------------
+*master
+git fetch
+git pull 
+git add .
+git commit -m " "
+git push origin <branc-name>
+---------------------------------
+

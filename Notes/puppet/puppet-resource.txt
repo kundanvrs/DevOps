@@ -1,0 +1,6 @@
+1.Puppet has many built-in resource types, like files, cron jobs, services, etc.
+
+You can also add new resource types to Puppet:
+----------------------------------------------
+1)Defined types are lightweight resource types written in the Puppet language.
+2)Custom resource types are written in Ruby, and have access to the same capabilities as Puppet’s built-in types.

@@ -1,0 +1,95 @@
+Puppet’s data types
+========================
+Strings
+Numbers
+Booleans
+Arrays
+Hashes
+Regular expressions
+Sensitive
+Time
+Undef
+Resource references
+Default
+-------------------
+Abstract data types
+-------------------
+Abstract data types let you do more sophisticated or permissive type checking.
+
+Scalar
+Collection
+Variant
+Data
+Pattern
+Enum
+Tuple
+Struct
+Optional
+Catalogentry
+Type
+Any
+Callable
+------------------------------
+There are four ways to write literal strings in the Puppet language:
+===============================
+Bare words
+Single-quoted strings
+Double-quoted strings
+Heredocs
+
+
+1)Bare words
+
+service { "ntp":
+  ensure => running, # bare word string
+}
+
+2)Single-quoted strings
+
+if $autoupdate {
+  notice('autoupdate parameter has been deprecated and replaced with package_ensure.  Set this to latest for the same behavior as autoupdate => true.')
+}
+
+3)Double-quoted strings
+Strings can also be surrounded by double quotes, "like this". 
+
+=========Escape sequences============
+The following escape sequences are available in double-quoted strings:
+
+Sequence	Result
+\\	Single backslash
+\n	Newline
+\r	Carriage return
+\t	Tab
+\s	Space
+\$	Literal dollar sign (to prevent interpolation)
+\uXXXX	Unicode character number XXXX (a four-digit hex number)
+\u{XXXXXX}	Unicode character XXXXXX (a hex number between two and six digits)
+\"	Literal double quote
+\'	Literal single quote
+
+4)Heredocs
+$gitconfig = @("GITCONFIG"/L)
+    [user]
+        name = ${displayname}
+        email = ${email}
+    [color]
+        ui = true
+    [alias]
+        lg = "log --pretty=format:'%C(yellow)%h%C(reset) %s \
+    %C(cyan)%cr%C(reset) %C(blue)%an%C(reset) %C(green)%d%C(reset)' --graph"
+        wdiff = diff --word-diff=color --ignore-space-at-eol \
+    --word-diff-regex='[[:alnum:]]+|[^[:space:][:alnum:]]+'
+    [merge]
+        defaultToUpstream = true
+    [push]
+        default = upstream
+    | GITCONFIG
+
+file { "${homedir}/.gitconfig":
+  ensure  => file,
+  content => $gitconfig,
+}
+
+==============================
+NUMBER

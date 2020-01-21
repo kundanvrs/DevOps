@@ -1,0 +1,20 @@
+Hiera is a built-in key-value configuration data lookup system, used for separating data from Puppet code.
+
+About Hiera
+============
+Puppet’s strength is in reusable code. Code that serves many needs must be configurable: put site-specific information in external configuration data files, rather than in the code itself.
+
+
+Puppet uses Hiera to do two things:
+-----------------------------------
+
+Store the configuration data in key-value pairs
+
+Look up what data a particular module needs for a given node during catalog compilation
+
+This is done via:
+-----------------
+Automatic Parameter Lookup for classes included in the catalog
+
+Explicit lookup calls
+

@@ -1,0 +1,72 @@
+DEVOPS LIFECYCLE
+-----------------
+DevOps basically emphasis on bringing all the Development and Operations + IT infrastructures guys together, which includes developers, system admins, QA’s. Testers etc also called as DevOps Engineers having the end-to-end responsibility from gathering information for development, to testing, to deployment of Infrastructure, to application deployment along with the monitoring & also getting feedback from the end users for making any better improvements, so this process of developing, testing, deployment and monitoring-gathering keeps on going for better results.
+
+STEPS-
+_______
+
+Code: First step to this life-cycle is Code, where developer build the code on any platform.
+-----
+Build: You build the version of your program in any extension depending upon the language you’re using.
+------
+Test: For DevOps to be successful, you must Automate all the testing process using any automation tools like Selenium etc.
+-----
+Release: Process for managing, planning, scheduling and controlling the build in different environments after testing and --------
+before deploying.
+Deploy: Then Deploy is to get all your application’s artifacts/all your code files and deploy or execute them on the -------
+server.
+Operate: Then we run that application after the deployment, where users are using it as a real use case.
+--------
+Monitor: Monitor helps in providing a crucial information which basically help you to ensure the service uptime and the --------
+optimal performance.
+
+Plan: Gather all the information through monitoring and whatever the feedback you received through the monitoring, you -----
+implement those changes for the better performance.
+If you have any doubts or Queries related to DevOps, get it clarifies from DevOps Experts on DevOps Community.
+
+Different Lifecycle Stages
+__________________________
+
+Now let’s discuss about different stages in DevOps Lifecycle which contributes to the consistent software development lifecycle:
+
+>Continuous Development
+>Continuous Integration
+>Continuous Testing
+>Continuous Monitoring
+>Virtualization and Containerization
+
+
+DEVOPS TOOLS
+=============
+Puppet – Puppet is one of the most widely-used DevOps tool. It allows delivering and release the technology changes quickly and frequently. It has features of versioning, automated testing and continuous delivery.
+
+Docker – Docker is a high-end DevOps tool that allows building, shipping and running distributed applications on multiple systems. It helps assemble the applications quickly and is typically suitable for container management.
+
+Jenkins – Jenkins is one of the most popular DevOps tool that allows monitoring the executions of repeated jobs. Not only this, Jenkins lets you integrate the changes and access the results easily and quickly.
+
+Ansible– This tool helps automate the entire life-cycle of an application. It manages complicated deployments and speeds up the productivity.
+
+Nagios – This tool helps monitor the IT infrastructure. It is able to determine the errors and rectify them with the help of standard network, server and log monitoring systems.
+
+
+DEVOPS ENGINEER WORKS
+======================
+
+Project planning and management: In addition to monitoring software, regulating and updating tools, they also provide their 
+--------------------------------
+expertise on costs, benefits, risks and what not about various projects.
+
+Design, development and deployment: DevOps Eng. are required to design and develop automated modules for better and smooth -----------------------------------
+functioning within the production environment by designing risk management techniques and tests etc.
+
+Communication and support: DevOps Eng. should have exceptional communication skills which comes in handy when they need to --------------------------
+work and coordinate with different departments and provide support.
+
+Technical skills: Some basic technical experience and familiarity with configuration tools is a must.
+-----------------
+
+Interpersonal skills: Since they are in a constant interaction with other departments in the business, they should be ---------------------
+approachable, organised, foresight, team player and ability to multitask would be a bonus.
+
+Troubleshooting: Last but not the least, one of the ongoing responsibilities of DevOps Eng. is to troubleshoot and come up ----------------
+with solutions for various errors to benefit the firm with speed and efficiency.

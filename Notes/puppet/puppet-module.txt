@@ -1,0 +1,31 @@
+In Puppet, a module can be defined as a collection of resources, classes, files, definition, and templates. Puppet supports easy re-distribution of modules, which is very helpful in modularity of code as one can write a specified generic module and can use it multiple times with very few simple code changes.
+
+Modules must have a valid name and be located in modulepath. Puppet automatically loads all content from every module in the modulepath, making classes, defined types, and plug-ins (such as custom types or facts) available.
+
+======================================
+STRUCTURE OF MODULE
+--------------------
+<MODULE NAME>
+manifests
+files
+templates
+lib
+  -facter
+  -puppet
+    -functions
+    -parser/functions
+    -type
+    -provider
+facts.d
+examples
+spec
+functions
+types
+tasks
+
+Module names
+--------------	
+Module names should contain only lowercase letters, numbers, and underscores, and should begin with a lowercase letter.
+module names cannot contain the namespace separator (::), because modules cannot be nested.
+
+

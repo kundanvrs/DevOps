@@ -1,0 +1,59 @@
+ls --- lists your files
+ls -l --- lists your files in 'long format'
+ls -a --- lists all files
+more filename --- shows the first part of a file, just as much as will fit on one screen
+emacs filename --- is an editor that lets you create and edit a file.
+mv filename1 filename2 --- moves a file 
+cp filename1 filename2 --- copies a file
+rm filename --- removes a file. It is wise to use the option rm -i,
+diff filename1 filename2 --- compares files, and shows where they differ
+wc filename --- tells you how many lines, words, and characters there are in a file
+chmod options filename --- lets you change the read, write, and execute permissions on your files.
+
+File Compression
+-----------------
+gzip filename --- compresses files, so that they take up much less space.
+gunzip filename --- uncompresses files compressed by gzip.
+gzcat filename --- lets you look at a gzipped file without actually having to gunzip it (same as gunzip -c). You can even print it directly, using gzcat filename | lpr
+
+printing
+---------
+lpr filename --- print. Use the -P option to specify the printer name
+
+Directories
+--------------
+mkdir dirname
+cd dirname
+pwd
+
+Finding string
+----------------
+grep string filename(s) --- looks for the string in the files. 
+ff --- find files anywhere on the system. 
+ff -p ---you don't even need the full name, just the beginning.
+
+About other people
+-------------------
+w --- tells you who's logged in, and what they're doing. 
+who --- tells you who's logged on,
+finger username --- gives you lots of information about that user, 
+last -1 username --- tells you when the user last logged on and off and from where.
+talk username --- lets you have a (typed) conversation with another user
+write username --- lets you exchange one-line messages with another user
+elm --- lets you send e-mail messages to people around the world
+
+About your (electronic) self
+---------------------------------
+whoami --- returns your username
+passwd --- lets you change your password,
+ps -u yourusername --- lists your processes.
+kill PID --- kills (ends) the processes with the ID you gave
+quota -v --- show what your disk quota
+du filename --- shows the disk usage of the files and directories in filename
+last yourusername --- lists your last logins. 
+
+
+
+
+
+

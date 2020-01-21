@@ -1,0 +1,80 @@
+Install Software in Ubuntu
+---------------------------
+PEEK
+$ sudo add-apt-repository ppa:peek-developers/stable
+$ sudo apt-get update
+$ sudo apt-get install peek
+---------------------------
+SHOTCUT
+sudo add-apt-repository ppa:haraldhv/shotcut
+sudo apt-get update
+sudo apt-get install shotcut
+----------------------------
+XAMPP
+sudo /opt/lampp/lampp start
+sudo /opt/lampp/lampp stop
+sudo apt install net-tools
+
+UNINSTALL PROCESS
+cd /opt/lampp
+sudo ./uninstall
+
+MYSQL
+sudo /opt/lampp/lampp startmysql
+/opt/lampp/bin/mysql -u root
+------------------------------------
+JENKINS
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+
+UPGRADE
+sudo apt-get update
+sudo apt-get install jenkins
+----------------------------------------
+PUPPET
+cd /tmp
+wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb
+dpkg -i puppetlabs-release-trusty.deb
+apt-get update
+
+apt-get install puppetmaster
+
+puppet --version
+service puppetmaster stop
+service puppetmaster start
+-----------------------------------------
+DOCKER COMMUNITY EDITION
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+sudo apt update
+apt-cache policy docker-ce
+
+sudo apt install docker-ce
+sudo systemctl status docker
+-------------------------------------------------
+FORTI CLIENT
+
+wget -O - https://repo.fortinet.com/repo/ubuntu/DEB-GPG-KEY | sudo apt-key add - 
+
+Add the following line in /etc/apt/sources.list
+deb [arch=amd64] https://repo.fortinet.com/repo/ubuntu/ /bionic multiverse 
+
+Update package lists
+sudo apt-get update 
+
+Install FortiClient
+sudo apt install forticlient 
+---------------------------------------------------------------------
+nautilus-extension
+
+sudo add-apt-repository ppa:daniel-marynicz/filemanager-actions
+sudo apt update
+sudo apt install filemanager-actions-nautilus-extension
+
+sudo apt remove --autoremove filemanager-actions
+-------------------------------------------------------------------
+

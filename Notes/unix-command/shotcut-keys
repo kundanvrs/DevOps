@@ -1,0 +1,22 @@
+These things are the same as in emacs:
+------------------------------------------
+Backspace --- delete previous character
+CTRL-d --- delete next character
+CTRL-k --- delete rest of line
+CTRL-a --- go to start of line
+CTRL-e --- go to end of line
+CTRL-b --- go backwards without deleting
+CTRL-f --- go forward without deleting
+---------------------------------------------
+Other useful things
+----------------------
+TAB --- complete filename or command up to the point of uniqueness
+CTRL-u --- cancel whole line
+CTRL-p --- show the last command typed, then the one before that, etc.
+(you can also use the cursor up key for this)
+CTRL-n --- go forwards in the history of commands
+(you can also use the cursor down key for this)
+CTRL-c --- cancel the processes after it has started
+CTRL-z --- suspend a running process (e.g. in order to do something else in between)
+you can then put the process in the background with bg
+CTRL-l --- redraws the screen

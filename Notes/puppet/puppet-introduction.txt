@@ -1,0 +1,9 @@
+Catalogs
+------------------------
+A catalog is a document that describes the desired system state for one specific computer. It lists all of the resources that need to be managed, as well as any dependencies between those resources.
+------
+Puppet configures systems in two stages:
+
+Compile a catalog.
+Apply the catalog.
+
